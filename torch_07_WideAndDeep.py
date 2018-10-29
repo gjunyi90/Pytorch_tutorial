@@ -60,5 +60,5 @@ for epoch in range(100):
     optimizer.step()
 
 
-for param in model.parameters(self):
-    print(param.data)
+# for param in model.parameters(self):
+#     print(param.data)
