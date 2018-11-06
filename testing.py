@@ -94,8 +94,31 @@ import time
 # print(torch.cuda.get_device_name(0))
 
 
-import torch.cuda
-if torch.cuda.is_available():
-    print('PyTorch found cuda')
-else:
-    print('PyTorch could not find cuda')
+# import torch.cuda
+# if torch.cuda.is_available():
+#     print('PyTorch found cuda')
+# else:
+#     print('PyTorch could not find cuda')
+#
+# import pycuda
+# from pycuda import compiler
+# import pycuda.driver as drv
+#
+# drv.init()
+# print("%d device(s) found." % drv.Device.count())
+#
+# for ordinal in range(drv.Device.count()):
+#     dev = drv.Device(ordinal)
+#     print(ordinal, dev.name())
+
+
+from pycuda import gpuarray
+from pycuda.curandom import rand as curand
+ # -- initialize the device
+import pycuda.autoinit
+
+height = 100
+width = 200
+X = curand((height, width), np.float32)
+X.flags.c_contiguous
+print (type(X))

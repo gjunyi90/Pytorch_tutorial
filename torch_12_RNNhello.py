@@ -63,6 +63,8 @@ print(model)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.1)
 
+
+
 # Train the model
 for epoch in range(100):
     optimizer.zero_grad()
