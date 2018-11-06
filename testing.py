@@ -66,19 +66,36 @@ import time
 # print(new_arr[new_arr>10]/1.0)
 
 
-# Python program to illustrate
-# enumerate function in loops
-l1 = ["eat", "sleep", "repeat"]
+# # Python program to illustrate
+# # enumerate function in loops
+# l1 = ["eat", "sleep", "repeat"]
+#
+# # printing the tuples in object directly
+# for ele in enumerate(l1,0):
+#     print(ele)
+#
+# # changing index and printing separately
+# for count, ele in enumerate(l1, 100):
+#     print(count, ele)
+#
+# testing = np.loadtxt('./data/diabetes.csv',
+#                         delimiter=',', dtype=np.float32)
+#
+# print(testing)
 
-# printing the tuples in object directly
-for ele in enumerate(l1,0):
-    print(ele)
+# import torch
+#
+# print(torch.cuda.current_device())
+#
+# print(torch.cuda.device(0))
+#
+# print(torch.cuda.device_count())
+#
+# print(torch.cuda.get_device_name(0))
 
-# changing index and printing separately
-for count, ele in enumerate(l1, 100):
-    print(count, ele)
 
-testing = np.loadtxt('./data/diabetes.csv',
-                        delimiter=',', dtype=np.float32)
-
-print(testing)
+import torch.cuda
+if torch.cuda.is_available():
+    print('PyTorch found cuda')
+else:
+    print('PyTorch could not find cuda')
