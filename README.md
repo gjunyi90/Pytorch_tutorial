@@ -1,5 +1,6 @@
 # PyTorchZeroToAll
 Quick 3~4 day lecture materials for HKUST students.
+https://github.com/hunkim/PyTorchZeroToAll
 
 ## Video Lectures: (RNN TBA)
 * [Youtube](http://bit.ly/PyTorchVideo)
