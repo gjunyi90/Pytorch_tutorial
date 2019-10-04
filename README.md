@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/hunkim/PythonZeroToAll.svg?branch=master)](https://travis-ci.org/hunkim/PythonZeroToAll)
-
 # PyTorchZeroToAll
 Quick 3~4 day lecture materials for HKUST students.
 
